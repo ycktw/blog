@@ -1,4 +1,5 @@
 # Vim
+*.o
 *~
 *.sw[p_]
 
@@ -30,3 +31,6 @@ codekit-config.json
 .sass-cache
 _asset_bundler_cache
 _site
+
+leetcode/*.exe
+leetcode/tags
