@@ -26,20 +26,20 @@ $(LRUCACHE_OBJ): libs/LRUCache.c libs/LRUCache.h
 	$(CC) $(CFLAGS) -c libs/LRUCache.c -o $(LRUCACHE_OBJ)
 
 swapInPairs: swapInPairs.c $(LISTNODE_OBJ)
-	$(CC) $(CFLAGS) $^ -o $@.exe
+	$(CC) $(CFLAGS) $^ -o $@
 checkCircle: checkCircle.c $(LISTNODE_OBJ)
-	$(CC) $(CFLAGS) $^ -o $@.exe
+	$(CC) $(CFLAGS) $^ -o $@
 reverseLinkedList: reverseLinkedList.c $(LISTNODE_OBJ)
-	$(CC) $(CFLAGS) $^ -o $@.exe
+	$(CC) $(CFLAGS) $^ -o $@
 
 removeElements: removeElements.c $(LISTNODE_OBJ)
-	$(CC) $(CFLAGS) $^ -o $@.exe
+	$(CC) $(CFLAGS) $^ -o $@
 
 LRUCache: LRUCache.c $(LRUCACHE_OBJ)
-	$(CC) $(CFLAGS) $^ -o $@.exe
+	$(CC) $(CFLAGS) $^ -o $@
 
 # 清理編譯產出的 .exe 檔案
 clean:
-	rm *.exe
+	rm $(PROGS)
 
 # vim set fdm=marker ts=4 ai et tw=0 noexpandtab

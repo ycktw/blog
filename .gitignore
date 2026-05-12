@@ -1,4 +1,5 @@
 # Vim
+*.o
 *~
 *.sw[p_]
 
@@ -32,3 +33,4 @@ _asset_bundler_cache
 _site
 
 leetcode/*.exe
+leetcode/tags

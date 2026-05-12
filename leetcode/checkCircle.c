@@ -1,4 +1,5 @@
 #include "libs/listnode.h"
+#include <stdbool.h>
 
 bool hasCycle(struct ListNode *head) {
     // 1. 處理空鏈表或只有一個節點的情況
